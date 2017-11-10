@@ -59,4 +59,11 @@ test可以判断三类条件
         2.1. 双方括号提供了针对字符串比较的高级特性
     
         2.2. 例如[[ $user == r* ]] 匹配了环境变量中以r开头的值
-
+## case命令
+```
+case variable in
+pattern1 | pattern2) commands1;;
+patterns3) commands2;;
+*) default commands3;;
+esac
+```
