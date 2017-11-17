@@ -1,6 +1,15 @@
 # 正则表达式（sed和gawk）
 ## BRE模式
 ### 纯文本
+1. echo "this is a test" | sed -n '/s a/p'
+2. echo "this is a test" | gawk '/test/{print $1}'
+
+```
+[nataliexi@NatalieXI ~]$ echo "this is a test" | gawk '/test/{print $1}'
+this
+[nataliexi@NatalieXI ~]$ echo "this is a test" | gawk '/test/{print $0}'
+this is a test
+```
 ### 特殊字符
 ### 锚字符
 ### 点字符
